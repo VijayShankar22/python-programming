@@ -19,3 +19,4 @@ flr = val // 1
 clr = -(-val // 1)
 print(flr, '00000', sep='')
 print(clr, '00000', sep='')
+
