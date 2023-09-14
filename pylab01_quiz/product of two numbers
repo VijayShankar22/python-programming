@@ -1,4 +1,4 @@
-#python code for obtaing product of two numbers
+#The Program to read two integer numbers and display the product of both numbers taken as a input.
 
 a=int(input())
 b=int(input())
