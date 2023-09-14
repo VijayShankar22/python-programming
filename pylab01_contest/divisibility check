@@ -6,7 +6,6 @@
 
 
 
-
 A=int(input())
 d1=int(input())
 d2=int(input())
