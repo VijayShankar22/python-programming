@@ -1,0 +1,18 @@
+#Given an integer number and two divisors d1 and d2, we have to check whether number is divisible by d1 and d2 or not.
+#Print "Yes." if number is divisible by both the entered divisors.
+#Print "No." if number is not divisible by both or any of the entered divisors.
+
+
+
+
+
+
+A=int(input())
+d1=int(input())
+d2=int(input())
+r1=A % d1 == 0
+r2=A % d2 == 0
+B = r1 and r2
+b=A%d1==A%d2
+c="Yes."*B+"No."*(1-B)
+print(c)
