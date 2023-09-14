@@ -1,0 +1,21 @@
+#Use of floor and ceil functions on floating point values.
+
+#Both functions are library functions and declare in math.h header file. Floor ignores the fraction part and just print the same in floating point.
+
+#E.g.
+
+#floor(123.46) then it will return 123.000000
+
+#ceil(123.46) then it will return 124.000000
+
+
+
+
+
+
+
+val = eval(input())
+flr = val // 1
+clr = -(-val // 1)
+print(flr, '00000', sep='')
+print(clr, '00000', sep='')
