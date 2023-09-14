@@ -1,5 +1,7 @@
 #The Program to read two integer numbers and display the product of both numbers taken as a input.
 
+
+
 a=int(input())
 b=int(input())
 print(a*b)
