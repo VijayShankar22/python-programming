@@ -1,0 +1,35 @@
+#Write the program to create building structure like the burj khaleefa with equivalent binary numbers.
+#Input Format
+
+      #input for the height(number of lines).
+
+#output should be like this.
+
+   0 
+   1 
+  10 
+  11 
+ 100 
+ 101 
+ 110 
+ 111 
+1000 
+1001 
+1010
+
+#
+
+
+
+
+
+
+
+height = int(input())
+
+max_width = len(bin(height)) - 2
+
+for i in range(height + 1):
+    binary_number = bin(i)[2:]
+    spaces = " " * (max_width - len(binary_number))
+    print(spaces + binary_number)
