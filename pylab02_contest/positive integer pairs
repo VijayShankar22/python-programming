@@ -1,0 +1,31 @@
+#Write a program for the given integers P and X, that display the positive integer pairs (i, j) with satisfy the following conditions.
+
+#i + j == P
+#i XOR j == X
+
+#Input Format
+#first line is first Integer P second line is second Integer X.
+
+
+
+
+
+
+
+
+def find_integer_pairs(P, X):
+    pairs = []
+    for i in range(P + 1):
+        j = P - i
+        if i ^ j == X and i <= j:
+            pairs.append((i, j))
+    return pairs
+
+
+P = int(input())
+X = int(input())
+
+
+result = find_integer_pairs(P, X)
+for pair in result:
+    print(pair[0], pair[1])
