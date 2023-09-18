@@ -1,0 +1,29 @@
+#Write a program for given three integers a, b, and x, display a if x is 1 and b if x is 0, using only mathematical or bitwise operations. 
+#Assume x can only be 1 or 0.
+
+#Input Format
+
+    #three integers in separate lines
+
+           #1. first integer value of a.
+           #2. second integer value of b.
+           #3. third integer value of x.
+
+
+#Output Format
+
+           #diplay value of integer a or integer b.
+
+
+
+
+a=int(input())
+b=int(input())
+x=int(input())
+if x == 1:
+    print (a)
+elif x == 0:
+    print(b)
+
+
+
