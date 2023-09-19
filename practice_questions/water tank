@@ -1,0 +1,27 @@
+#consider a water tank (cylindrical shape) with height 10m and radius 5m. there is a pump with flow rate 15m^3/min.
+#user will enter the time for the pump to be on. write a python program to display the status of the tank. weather it is full, underflow or overflow.
+
+
+
+
+
+
+
+
+t=float(input("enter the time"))
+h=10
+r=5
+f=15
+vtank=3.14*r**2*h
+vwater=f*t
+if vtank==vwater:
+    print("tank full")
+elif vtank > vwater:
+    print("underflow condition")
+    ht=vwater/3.14*r*2
+    hr=h-ht
+    print("filling height",ht)
+    print("remaining height",hr)
+else:
+    print("overflow condition")
+    print("volume",vwater-vtank)
