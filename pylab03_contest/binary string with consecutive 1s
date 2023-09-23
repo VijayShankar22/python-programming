@@ -1,0 +1,32 @@
+#Write a program where user enter the integer number n and generate the binary number reprsentation of n digits width. Your task is to count those binary reprsentation's out of all the generated ones in which binary number string has consecutive 1's.
+
+#Examples:
+
+#Input  : n = 2
+#Output : 1
+#There are 4 bunary strings of width 2
+#the strings are '00', '01', '10' and '11'. 
+#Only the string '11' has consecutive 1's.
+
+#Input  : n = 3
+#Output : 3
+#There are 8 strings of length 3, the
+#strings are '000', '001', '010', '011', '100', 
+#'101', '110' and '111'.  The strings with
+#consecutive 1's are '011', '110' and '111'.
+
+#Input : n = 5
+#Output : 19
+
+
+
+
+n = int(input())
+count = 0
+
+for i in range(2**n):
+    binary_str = bin(i)[2:]
+    if '11' in binary_str:
+        count += 1
+        
+print(count)
