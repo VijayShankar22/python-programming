@@ -1,0 +1,33 @@
+#Given a string and we have to swap its adjacent characters(pairs).
+
+#Here, to swap adjacent characters of a given string - we have a condition, which is "string length must be EVEN i.e. 
+#string must contains even number of characters".
+
+#Sample Input 0
+
+  #Hello
+#Sample Output 0
+
+  #Odd length.
+
+#Sample Input 1
+
+  #help
+#Sample Output 1
+
+  #ehpl
+
+
+
+
+
+
+
+input_string = input()
+
+if len(input_string) % 2 == 0:
+    swapped_string = ''.join(input_string[i+1] + input_string[i] for i in range(0, len(input_string), 2))
+    print(swapped_string)
+else:
+    print("Odd length.")
+
