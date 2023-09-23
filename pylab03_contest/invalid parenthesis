@@ -1,0 +1,44 @@
+#An expression will be given which can contain open and close parentheses , No other operator will be there in string. 
+#Find the paranthesis patterns is valid or not
+
+#Input Format
+
+     #string of parenthesis
+
+
+#Sample Input 0
+
+  #(()()())
+#Sample Output 0
+
+   #'True'
+#Sample Input 1
+
+    #()))()
+#Sample Output 1
+
+    #'False'
+
+
+
+
+
+
+    expression = input()
+
+count = 0
+
+for char in expression:
+    if char == '(':
+        count += 1
+    elif char == ')':
+        count -= 1
+
+    if count < 0:
+        print("'False'")
+        break
+
+if count == 0:
+    print("'True'")
+elif count > 0:
+    print("'False'")
