@@ -1,3 +1,5 @@
+#python program to check weather a given number n is in fibonacci series or not using list method.
+
 n = int(input("Enter the number: "))
 
 if n == 0 or n == 1:
