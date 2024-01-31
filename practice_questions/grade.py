@@ -16,14 +16,14 @@
 
 
 
-m=float(input("enter the marks obtained"))
+m=float(input("enter the marks obtained:"))
 if (m>=90):
     print("A")
-if(m>=70) and (m<=90):
+elif(m<90) and (m>=70):
     print("B")
-if (m>=50) and (m<=70):
+elif (m<70) and (m>=50):
     print("c")
-if(m>=30) and (m<=50):
+elif(m<50) and (m>=30):
     print("D")
-if (m<30):
+elif (m<30):
     print("fail")
